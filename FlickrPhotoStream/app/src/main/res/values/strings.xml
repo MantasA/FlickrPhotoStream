@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Photo feed</string>
+    <string name="actionBarSearchHint">Type keyword to search&#8230;</string>
+    <string name="actionSearch">Search</string>
+
+</resources>
