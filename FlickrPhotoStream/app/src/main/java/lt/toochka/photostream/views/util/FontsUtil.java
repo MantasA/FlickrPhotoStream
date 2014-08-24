@@ -1,23 +1,33 @@
-package lt.toochka.flickrphotostream.views.util;
+package lt.toochka.photostream.views.util;
 
+import android.content.Context;
 import android.graphics.Typeface;
 
-import lt.toochka.flickrphotostream.PhotoStreamApplication;
+import lt.toochka.photostream.PhotoStreamApplication;
 
 /**
  * Created by Toochka on 23/08/14.
  */
 public class FontsUtil {
     /**
-     * @param pFont The {@link lt.toochka.flickrphotostream.views.util.FontsUtil.Font}.
+     * @param pFont The {@link lt.toochka.photostream.views.util.FontsUtil.Font}.
      * @return The {@link android.graphics.Typeface} to given font.
      */
-    public static final Typeface getFont(final Font pFont) {
+    public static final Typeface getFont(Context pContext, final Font pFont) {
+        if (pContext == null) {
+            pContext = PhotoStreamApplication.getContext();
+        }
+
         if (pFont == null) {
             throw new IllegalArgumentException("pFont == null");
         }
 
-        return Typeface.createFromAsset(PhotoStreamApplication.getContext().getAssets(), pFont.getFontPath());
+        try {
+            return Typeface.createFromAsset(pContext.getAssets(), pFont.getFontPath());
+        } catch (Exception e) {
+            // This is only for UI drawing. Should never happen on a device
+            return Typeface.DEFAULT;
+        }
     }
 
     private FontsUtil() {

@@ -1,4 +1,4 @@
-package lt.toochka.flickrphotostream;
+package lt.toochka.photostream;
 
 import android.app.Application;
 import android.content.Context;

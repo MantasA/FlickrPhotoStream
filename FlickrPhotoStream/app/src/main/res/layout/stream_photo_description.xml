@@ -3,18 +3,22 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
 
-    <lt.toochka.flickrphotostream.views.RobotoMediumTextView
+    <lt.toochka.photostream.views.RobotoMediumTextView
         android:id="@+id/tvPhotoName"
         android:layout_width="wrap_content"
-        android:textColor="@color/white"
         android:textSize="15sp"
+        android:layout_marginLeft="@dimen/photoDescriptionLeftMargin"
+        style="@style/textWhiteWithAlpha40"
         android:layout_height="wrap_content"/>
 
-    <lt.toochka.flickrphotostream.views.RobotoRegularTextView
+    <lt.toochka.photostream.views.RobotoRegularTextView
         android:id="@+id/tvPhotoAuthor"
         android:layout_width="wrap_content"
-        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/photoDescriptionLeftMargin"
         android:textSize="10sp"
+        android:layout_marginTop="@dimen/photoDescriptionMiddleMargin"
+        android:layout_marginBottom="@dimen/photoDescriptionBottomMargin"
+        style="@style/textWhiteWithAlpha40"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>

@@ -1,8 +1,24 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/actionBarPhotoStream</item>
+    </style>
+
+    <style name="actionBarPhotoStream" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/actionBarPhotoSteramBackground</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:titleTextStyle">@style/actionBarTitleText</item>
+        <item name="android:layout_height">48sp</item>
+        <item name="android:listPreferredItemPaddingRight">14.67sp</item>
+    </style>
+
+    <style name="actionBarTitleText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textWhiteWithAlpha40">
+        <item name="android:textColor">@color/whiteWithAlpha40</item>
     </style>
 
 </resources>

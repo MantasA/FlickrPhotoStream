@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#FFFFFF</color>
+
+    <!-- White color with 40% alpha -->
+    <color name="whiteWithAlpha40">#64FFFFFF</color>
+
+    <color name="actionBarPhotoSteramBackground">#363F56</color>
 </resources>

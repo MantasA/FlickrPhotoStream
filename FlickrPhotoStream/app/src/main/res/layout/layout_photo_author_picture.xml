@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_marginRight="@dimen/authorPhotoMargin"
+              android:layout_marginBottom="@dimen/authorPhotoMargin"
+              android:background="@drawable/feed_buddyicon_overlay"
+              android:layout_height="match_parent">
+
+    <lt.toochka.photostream.views.RoundImageView
+        android:id="@+id/rivAuthorPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

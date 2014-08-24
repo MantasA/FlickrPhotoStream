@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
 
-    <lt.toochka.flickrphotostream.views.RobotoMediumTextView
+    <lt.toochka.photostream.views.RobotoMediumTextView
         android:id="@+id/tvPhotoName"
+        style="@style/textWhiteWithAlpha40"
         android:layout_width="wrap_content"
-        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/photoDescriptionLeftMargin"
         android:textSize="21.67sp"
         android:layout_height="wrap_content"/>
 
-    <lt.toochka.flickrphotostream.views.RobotoRegularTextView
+    <lt.toochka.photostream.views.RobotoRegularTextView
         android:id="@+id/tvPhotoAuthor"
+        style="@style/textWhiteWithAlpha40"
+        android:layout_marginLeft="@dimen/photoDescriptionLeftMargin"
         android:layout_width="wrap_content"
-        android:textColor="@color/white"
         android:textSize="12sp"
+        android:layout_marginTop="@dimen/photoDescriptionMiddleMargin"
+        android:layout_marginBottom="@dimen/photoDescriptionBottomMargin"
         android:layout_height="wrap_content"/>
 
 </LinearLayout>

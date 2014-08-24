@@ -1,10 +1,10 @@
-package lt.toochka.flickrphotostream.views;
+package lt.toochka.photostream.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import lt.toochka.flickrphotostream.views.util.FontsUtil;
+import lt.toochka.photostream.views.util.FontsUtil;
 
 /**
  * Created by Toochka on 23/08/14.
@@ -12,20 +12,25 @@ import lt.toochka.flickrphotostream.views.util.FontsUtil;
 public class RobotoMediumTextView extends TextView {
     public RobotoMediumTextView(final Context context) {
         super(context);
-        init();
+        init(context);
     }
 
     public RobotoMediumTextView(final Context context, final AttributeSet attrs) {
         super(context, attrs);
-        init();
+        init(context);
     }
 
     public RobotoMediumTextView(final Context context, final AttributeSet attrs, final int defStyle) {
         super(context, attrs, defStyle);
-        init();
+        init(context);
     }
 
-    private void init() {
-        setTypeface(FontsUtil.getFont(FontsUtil.Font.RobotoMedium));
+    private void init(final Context pContext) {
+        setTypeface(FontsUtil.getFont(pContext, FontsUtil.Font.RobotoMedium));
+    }
+
+    @Override
+    public boolean isInEditMode() {
+        return true;
     }
 }
